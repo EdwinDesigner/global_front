@@ -1,0 +1,392 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <title>Global - Inicio</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="./styles/output.css" rel="stylesheet">
+</head>
+<body>
+
+  <div
+    id="drawer-menu"
+    class="fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform translate-x-full bg-white w-80"
+    tabindex="-1"
+    aria-labelledby="main-menu"
+  >
+    <h5 id="main-menu" class="inline-flex items-center mb-4 text-base font-semibold text-gray-500">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="fill-zinc-600 mr-4">
+        <path d="M21 7.75H3C2.59 7.75 2.25 7.41 2.25 7C2.25 6.59 2.59 6.25 3 6.25H21C21.41 6.25 21.75 6.59 21.75 7C21.75 7.41 21.41 7.75 21 7.75Z"/>
+        <path d="M21 12.75H3C2.59 12.75 2.25 12.41 2.25 12C2.25 11.59 2.59 11.25 3 11.25H21C21.41 11.25 21.75 11.59 21.75 12C21.75 12.41 21.41 12.75 21 12.75Z"/>
+        <path d="M21 17.75H3C2.59 17.75 2.25 17.41 2.25 17C2.25 16.59 2.59 16.25 3 16.25H21C21.41 16.25 21.75 16.59 21.75 17C21.75 17.41 21.41 17.75 21 17.75Z"/>
+      </svg>
+      Menú principal
+    </h5>
+    <button type="button" data-drawer-hide="drawer-menu" aria-controls="drawer-menu" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center" >
+        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+        </svg>
+        <span class="sr-only">Cerrar menú</span>
+    </button>
+    <p class="mb-6 text-sm text-gray-500">Hola como estas? soy yo :3</p>
+  </div>
+
+  <header class="w-full h-[480px] xl:h-[647px] bg-gradient-to-b from-[#8AD0F7] mb-10 sm:mb-20 overflow-hidden">
+    <nav class="relative z-10">
+      <div class="container mx-auto px-4 sm:px-0">
+        <section class="flex justify-between items-center py-8">
+          <a href="index.html" class="h-12 sm:h-20">
+            <img src="../public/global-logo.png" alt="logo global" class="w-full h-full object-contain">
+          </a>
+          <ul class="hidden xl:flex items-center gap-10">
+            <li><a href="#" class="text-lg text-sky-700 font-medium hover:text-sky-900">Inicio</a></li>
+            <li><a href="#" class="text-lg text-sky-700 font-medium hover:text-sky-900">formas de pago</a></li>
+            <li><a href="#" class="text-lg text-sky-700 font-medium hover:text-sky-900">Planes y tarifas</a></li>
+            <li><a href="#" class="text-lg text-sky-700 font-medium hover:text-sky-900">Nosotros</a></li>
+          </ul>
+          <article class="xl:hidden">
+            <button
+              class="flex justify-center items-center bg-white/30 rounded-lg w-10 h-10 group"
+              type="button"
+              data-drawer-target="drawer-menu"
+              data-drawer-show="drawer-menu"
+              data-drawer-placement="right"
+              aria-controls="drawer-menu"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="fill-zinc-800 group-hover:fill-sky-700 w-8 h-8">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.75 7C20.75 7.41421 20.4142 7.75 20 7.75L4 7.75C3.58579 7.75 3.25 7.41421 3.25 7C3.25 6.58579 3.58579 6.25 4 6.25L20 6.25C20.4142 6.25 20.75 6.58579 20.75 7Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.75 12C20.75 12.4142 20.4142 12.75 20 12.75L4 12.75C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25L20 11.25C20.4142 11.25 20.75 11.5858 20.75 12Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.75 17C20.75 17.4142 20.4142 17.75 20 17.75L4 17.75C3.58579 17.75 3.25 17.4142 3.25 17C3.25 16.5858 3.58579 16.25 4 16.25L20 16.25C20.4142 16.25 20.75 16.5858 20.75 17Z" />
+              </svg>
+            </button>
+          </article>
+          <article class="hidden xl:flex gap-4">
+            <button class="px-4 py-3 rounded-lg bg-sky-700 text-white font-medium hover:bg-sky-600 transition-all">
+              Iniciar sessión
+            </button>
+            <button class="px-4 py-3 rounded-lg bg-amber-500 text-white font-medium hover:bg-amber-400 transition-all">
+              Consultar deuda
+            </button>
+          </article>
+        </section>
+      </div>
+    </nav>
+    <div class="container mx-auto h-full relative z-10">
+      <section class="h-full flex items-center relative mx-4 sm:mx-0">
+        <article class="max-w-2xl lg:max-w-sm xl:max-w-2xl text-center lg:text-left mx-auto lg:mx-0 relative z-10">
+          <h1 class="text-5xl text-sky-700 font-extrabold">Internet en Upata</h1>
+          <p class="text-lg text-zinc-600 font-medium mt-3">Con los planes de internet de fibra óptica de Global, tienes la libertad de elegir la velocidad de conexión que se adapte a tu trabajo y estilo de vida, sin sorpresas por tarifas adicionales por consumo</p>
+          <button class="px-4 py-3 rounded-lg bg-sky-700 text-white font-medium hover:bg-sky-600 transition-all mt-8">
+            Ver planes de internet
+          </button>
+        </article>
+        <article class="absolute top-2/4 -translate-y-2/4 left-2/4 -translate-x-2/4 lg:translate-x-0 lg:right-0 w-full lg:w-auto z-0 opacity-15 lg:opacity-100">
+          <img src="../public/assets/images/hero-image.png" alt="hero-image" class="w-full h-full object-contain">
+        </article>
+      </section>
+    </div>
+    <div
+      class="absolute top-0 left-0 w-full h-full z-0"
+      style="
+        background: url(../public/assets/textura-d.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      "
+    ></div>
+  </header>
+
+  <!-- plan -->
+  <div class="container mx-auto px-4 sm:px-0 relative z-10">
+    <section class="py-20">
+      <h2 class="text-3xl text-sky-700 text-center font-semibold max-w-xs sm:max-w-lg lg:max-w-3xl mx-auto block">Elije el servicio que mejor se adapte a tu preferencia</h2>
+      <!-- Cards -->
+      <section class="gap-10 mt-10 justify-center hidden md:flex">
+        <!-- Card -->
+        <article class="max-w-xs w-full rounded-lg bg-white shadow-lg overflow-hidden hover:scale-110 transition-all">
+          <figure class="w-full max-h-52">
+            <img src="../public/assets/images/plan_residencial.jpg" alt="plan_residencial">
+          </figure>
+          <section class="p-4">
+            <h3 class="text-lg text-sky-700 font-semibold text-center">Internet residencial</h3>
+            <p class="text-zinc-500 text-center mt-2">Conéctate a la velocida de la luz y navega sin límites con nuestro servicio de internet residencial.</p>
+            <div class="flex justify-center mt-6">
+              <button class="px-8 py-2 rounded-lg bg-green-500 text-white font-medium hover:bg-green-400 transition-all">
+                Ver más
+              </button>
+            </div>
+          </section>
+        </article>
+        <!-- Card -->
+        <article class="max-w-xs w-full rounded-lg bg-white shadow-lg overflow-hidden hover:scale-110 transition-all">
+          <figure class="w-full max-h-52">
+            <img src="../public/assets/images/plan_empresarial.jpg" alt="plan_empresarial">
+          </figure>
+          <section class="p-4">
+            <h3 class="text-lg text-sky-700 font-semibold text-center">Internet empresarial</h3>
+            <p class="text-zinc-500 text-center mt-2">Potencia tu negocio con nuestra conexión a internet de alta velocidad y confiabilidad empresarial Ver más.</p>
+            <div class="flex justify-center mt-6">
+              <button class="px-8 py-2 rounded-lg bg-green-500 text-white font-medium hover:bg-green-400 transition-all">
+                Ver más
+              </button>
+            </div>
+          </section>
+        </article>
+      </section>
+
+      <!-- Slider -->
+      <div class="mt-10 md:hidden">
+        <div class="swiper plans">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide pb-10">
+              <div class="w-full flex justify-center">
+                <article class="max-w-xs w-full rounded-lg bg-white shadow-lg overflow-hidden">
+                  <figure class="w-full max-h-52">
+                    <img src="../public/assets/images/plan_residencial.jpg" alt="plan_residencial">
+                  </figure>
+                  <section class="p-4">
+                    <h3 class="text-lg text-sky-700 font-semibold text-center">Internet residencial</h3>
+                    <p class="text-zinc-500 text-center mt-2">Conéctate a la velocida de la luz y navega sin límites con nuestro servicio de internet residencial.</p>
+                    <div class="flex justify-center mt-6">
+                      <button class="px-8 py-2 rounded-lg bg-green-500 text-white font-medium hover:bg-green-400 transition-all">
+                        Ver más
+                      </button>
+                    </div>
+                  </section>
+                </article>
+              </div>
+            </div>
+            <div class="swiper-slide pb-10">
+              <div class="w-full flex justify-center">
+                <article class="max-w-xs w-full rounded-lg bg-white shadow-lg overflow-hidden">
+                  <figure class="w-full max-h-52">
+                    <img src="../public/assets/images/plan_empresarial.jpg" alt="plan_empresarial">
+                  </figure>
+                  <section class="p-4">
+                    <h3 class="text-lg text-sky-700 font-semibold text-center">Internet empresarial</h3>
+                    <p class="text-zinc-500 text-center mt-2">Potencia tu negocio con nuestra conexión a internet de alta velocidad y confiabilidad empresarial Ver más.</p>
+                    <div class="flex justify-center mt-6">
+                      <button class="px-8 py-2 rounded-lg bg-green-500 text-white font-medium hover:bg-green-400 transition-all">
+                        Ver más
+                      </button>
+                    </div>
+                  </section>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="plans-pagination swiper-pagination"></div>
+  
+          <div class="plans-button-prev swiper-button-prev"></div>
+          <div class="plans-button-next swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div
+    class="w-full"
+    style="
+      background: linear-gradient(rgba(3, 106, 161, 0.65), rgba(3, 106, 161, 0.65)), url('../public/assets/images/todos_los_rincones.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-attachment: fixed;
+    "
+  >
+    <div class="container mx-auto px-4 sm:px-0">
+      <div class="py-10">
+        <h2 class="text-2xl text-white font-semibold text-center sm:text-left">¡Llegamos a cada rincón del oriente de Venezuela!</h2>
+        <p class="text-white/75 mt-4 text-center sm:text-left">Con la mejor cobertura en el oriente del país, hemos expandido nuestra presencia para mantenerte conectado en las ciudades que amas. ¡Estamos en Santa Elena, Puerto Ordaz, San Félix, Upata, Guasipati, Maturín y Santa Bárbara de Barinas! Donde sea que te encuentres en el oriente de Venezuela, estamos listos para brindarte la mejor conexión y los servicios de alta calidad que mereces. ¡Conéctate con nosotros y experimenta la diferencia de una cobertura excepcional en tu área! No importa si estás en la selva, la ciudad o en algún lugar entre montañas, ¡nuestra red te tiene cubierto! Únete a la revolución de la conectividad en el oriente de Venezuela. ¡La mejor cobertura está a solo un clic de distancia!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4 sm:px-0 my-20">
+    <div class="flex flex-col xl:flex-row gap-10">
+      <div class="flex-1">
+        <h2 class="text-2xl text-zinc-800 font-semibold">Indícanos los siguientes datos</h2>
+        <p class="text-base text-zinc-500">Indícanos los siguientes datos para ponernos en contacto contigo</p>
+        <form class="p-6 bg-white shadow-xl rounded-lg border mt-6 space-y-6">
+          <div class="flex flex-col sm:flex-row gap-6 w-full">
+            <label class="flex flex-col gap-1 text-base text-zinc-600 w-full">
+              Nombre
+              <input
+                type="text"
+                placeholder="Tu nombre aquí"
+                class="border border-zinc-200 rounded-lg px-4 py-3"
+              >
+            </label>
+            <label class="flex flex-col gap-1 text-base text-zinc-600 w-full">
+              Apellidos
+              <input
+                type="text"
+                placeholder="Tu apellido aquí"
+                class="border border-zinc-200 rounded-lg px-4 py-3"
+              >
+            </label>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-6 w-full">
+            <label class="flex flex-col gap-1 text-base text-zinc-600 w-full">
+              Teléfono
+              <input
+                type="tel"
+                placeholder="Tu teléfono aquí"
+                class="border border-zinc-200 rounded-lg px-4 py-3"
+              >
+            </label>
+            <label class="flex flex-col gap-1 text-base text-zinc-600 w-full">
+              Correo electrónico
+              <input
+                type="email"
+                placeholder="Tu correo electrónico aquí"
+                class="border border-zinc-200 rounded-lg px-4 py-3"
+              >
+            </label>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-6 w-full">
+            <label class="flex flex-col gap-1 text-base text-zinc-600 w-full">
+              Ciudad
+              <select class="border border-zinc-200 rounded-lg px-4 py-3 w-full">
+                <option value="" selected disabled>-- Elije tu ciudad --</option>
+                <option value="callao">El Callao</option>
+                <option value="guasipati">Guasipati</option>
+                <option value="poz">Puerto Ordaz</option>
+                <option value="sanfelix">San Felix</option>
+                <option value="upata">Upata</option>
+              </select>
+            </label>
+            <label class="flex flex-col gap-1 text-base text-zinc-600 w-full">
+              Servicio
+              <select class="border border-zinc-200 rounded-lg px-4 py-3 w-full">
+                <option value="" selected disabled>-- Elije un servicio --</option>
+                <optgroup label="Planes Residenciales">
+                  <option value="r-30">Internet residencial 30 MB</option>
+                  <option value="r-50">Internet residencial 50 MB</option>
+                  <option value="r-150">Internet residencial 150 MB</option>
+                </optgroup>
+                <optgroup label="Planes Empresariales">
+                  <option value="e-30">Internet empresarial 30 MB</option>
+                  <option value="e-50">Internet empresarial 50 MB</option>
+                  <option value="e-150">Internet empresarial 150 MB</option>
+                </optgroup>
+              </select>
+            </label>
+          </div>
+          <label class="flex flex-col gap-1 text-base text-zinc-600 w-full">
+            Dejanos un comentario
+            <textarea
+              class="border border-zinc-200 rounded-lg px-4 py-3 w-full min-h-20"
+              placeholder="Dejanos tu comentario aquí"
+            ></textarea>
+          </label>
+          <div class="flex justify-center">
+            <button class="px-8 py-3 rounded-lg bg-green-500 text-white font-medium hover:bg-green-400 transition-all">
+              Enviar datos
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="flex-1">
+        <h2 class="text-2xl text-zinc-800 font-semibold">La solución a tus necesidades de conectividad está a solo 4 pasos de distancia!</h2>
+        <p class="text-base text-zinc-500 mt-2">¿Quieres disfrutar de nuestro excepcional servicio? ¡Es más fácil de lo que piensas! Contáctanos hoy mismo y en tan solo 4 pasos, tendrás nuestra increíble oferta en la comodidad de tu hogar.</p>
+        <div class="mt-10 space-y-8">
+          <div>
+            <div class="flex gap-2 items-center">
+              <div class="w-10 h-10 rounded-full bg-sky-700 text-white text-base font-bold flex justify-center items-center">
+                1
+              </div>
+              <p class="text-xl text-zinc-800 font-semibold">Contáctanos:</p>
+            </div>
+            <p class="text-base text-zinc-500 mt-2">Llámanos, envíanos un mensaje o llena nuestro formulario en línea. Estamos listos para escucharte.</p>
+          </div>
+          <div>
+            <div class="flex gap-2 items-center">
+              <div class="w-10 h-10 rounded-full bg-sky-700 text-white text-base font-bold flex justify-center items-center">
+                2
+              </div>
+              <p class="text-xl text-zinc-800 font-semibold">Consulta personalizada:</p>
+            </div>
+            <p class="text-base text-zinc-500 mt-2">Nuestro equipo te brindará una consulta personalizada para entender tus necesidades y ofrecerte el plan perfecto.</p>
+          </div>
+          <div>
+            <div class="flex gap-2 items-center">
+              <div class="w-10 h-10 rounded-full bg-sky-700 text-white text-base font-bold flex justify-center items-center">
+                3
+              </div>
+              <p class="text-xl text-zinc-800 font-semibold">Instalación sin complicaciones:</p>
+            </div>
+            <p class="text-base text-zinc-500 mt-2">Programaremos la instalación a tu conveniencia. Nuestros técnicos expertos se encargarán de todo.</p>
+          </div>
+          <div>
+            <div class="flex gap-2 items-center">
+              <div class="w-10 h-10 rounded-full bg-sky-700 text-white text-base font-bold flex justify-center items-center">
+                4
+              </div>
+              <p class="text-xl text-zinc-800 font-semibold">Disfruta de la conectividad:</p>
+            </div>
+            <p class="text-base text-zinc-500 mt-2">¡Listo! En poco tiempo, estarás disfrutando de una conexión rápida y confiable en tu hogar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-12">
+      <p class="text-lg text-sky-700 font-semibold text-center">No pierdas más tiempo con conexiones lentas. ¡Contáctanos ahora y experimenta la diferencia de un servicio de primera clase en tan solo 4 sencillos pasos! Con nosotros, la conectividad es sinónimo de simplicidad y calidad.</p>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4 sm:px-0 mb-16">
+    <div class="flex flex-col items-center">
+      <h2 class="text-2xl text-zinc-800 font-semibold text-center">Gestiona tu cuenta</h2>
+      <div class="flex flex-col sm:flex-row gap-4 mt-4">
+        <button class="px-4 py-3 rounded-lg bg-sky-700 text-white font-medium hover:bg-sky-600 transition-all">
+          Iniciar sessión
+        </button>
+        <button class="px-4 py-3 rounded-lg bg-amber-500 text-white font-medium hover:bg-amber-400 transition-all">
+          Consultar deuda
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-sky-700 py-16 relative z-10">
+    <div class="container mx-auto px-4 sm:px-0">
+      <div class="flex flex-col lg:flex-row justify-between gap-6 lg:gap-20">
+        <a href="index.html" class="h-12 sm:h-20">
+          <img src="../public/global-logo-white.png" alt="logo global" class="w-full h-full object-contain">
+        </a>
+        <div class="flex flex-col items-center lg:items-start mt-10 lg:mt-0">
+          <p class="text-white text-center text-xl font-medium">Dirección:</p>
+          <p class="text-white/75 text-center lg:text-left">Local 2, CC Rossi, Av Raúl Leoni, Upata, Edo-Bolívar</p>
+        </div>
+        <div class="flex flex-col items-center lg:items-start min-w-40">
+          <p class="text-white text-xl font-medium">Teléfonos:</p>
+          <p class="text-white/75">-> 0412-2471247</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+  <script>
+    const swiper = new Swiper('.plans', {
+      centeredSlides: true,
+      pagination: {
+        el: '.plans-pagination',
+      },
+      navigation: {
+        nextEl: '.plans-button-next',
+        prevEl: '.plans-button-prev',
+      }
+    });
+  </script>
+
+</body>
+</html>
